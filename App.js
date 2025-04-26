@@ -15,9 +15,10 @@ export default function App() {
         <Stack.Navigator
           initialRouteName="Home"
           screenOptions={{
-            headerStyle: { backgroundColor: "#6200ee" },
+            headerStyle: { backgroundColor: "#D94F2B" },
             headerTintColor: "#fff",
             headerTitleStyle: { fontWeight: "bold" },
+            headerTitleAlign: "center",
           }}
         >
           <Stack.Screen
@@ -28,7 +29,7 @@ export default function App() {
           <Stack.Screen
             name="Recipe"
             component={RecipeScreen}
-            options={({ route }) => ({ title: route.params.recipe.nome })}
+            options={({ route }) => ({ title: route.params.receitas.nome })}
           />
         </Stack.Navigator>
       </NavigationContainer>
